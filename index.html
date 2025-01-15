@@ -6,38 +6,64 @@
     <title>Currículum Vitae - Valentín Zárate</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            background-color: #f4f4f9;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
             color: #333;
         }
-        h1, h2 {
-            color: #444;
-        }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .section-title {
-            font-size: 1.5em;
-            border-bottom: 2px solid #444;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3498db;
             padding-bottom: 5px;
+            color: #2c3e50;
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        ul li {
             margin-bottom: 10px;
         }
-        a {
-            color: #0066cc;
+        ul li a {
+            color: #3498db;
             text-decoration: none;
         }
-        a:hover {
+        ul li a:hover {
             text-decoration: underline;
+        }
+        .language-rating {
+            display: flex;
+            align-items: center;
+        }
+        .language-rating span {
+            margin-right: 10px;
+        }
+        .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 5px;
+            background-color: #ddd;
+        }
+        .circle.filled {
+            background-color: #3498db;
         }
     </style>
 </head>
@@ -64,30 +90,40 @@
         </div>
 
         <div class="section">
+            <div class="section-title">Idiomas</div>
+            <ul>
+                <li class="language-rating">
+                    <span>Español - Nativo:</span>
+                    <div class="circle filled"></div>
+                    <div class="circle filled"></div>
+                    <div class="circle filled"></div>
+                    <div class="circle filled"></div>
+                    <div class="circle filled"></div>
+                </li>
+                <li class="language-rating">
+                    <span>Inglés - Avanzado:</span>
+                    <div class="circle filled"></div>
+                    <div class="circle filled"></div>
+                    <div class="circle filled"></div>
+                    <div class="circle filled"></div>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
             <div class="section-title">Artículos y Publicaciones</div>
             <ul>
-                <li>"Feeding behaviour of Lesser anteaters in response to social insects" - <a href="https://doi.org/10.3390/jzbg3010002" target="_blank">Leer artículo</a></li>
-                <li>"Comportamiento agresivo en hembras de Jacana spinosa" - <a href="https://doi.org/10.6084/m9.figshare.13348355.v1" target="_blank">Leer artículo</a></li>
-                <li>"Observaciones del comportamiento de ingreso a cavidades del Vencejo de Collar" - <a href="https://doi.org/10.6084/m9.figshare.13562495.v2" target="_blank">Leer artículo</a></li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Cursos</div>
-            <ul>
-                <li>"Animal space use and movement analysis in R" (2023) - Smithsonian Institute</li>
-                <li>"Métodos estadísticos avanzados en Ecología y Evolución" (2022) - Universidad de la República, Uruguay</li>
-                <li>"Ecología Tropical y Conservación" (2020) - OET, Costa Rica</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Experiencia en Docencia</div>
-            <ul>
-                <li>Docente auxiliar en cursos de posgrado - UNaM (2023)</li>
-                <li>Docente titular en Biología, nivel medio - Escuela Nueva Juan Mantovani (2018-2019)</li>
+                <li>"Feeding behaviour of Lesser anteaters in response to social insects: selectivity on the basis of nutritional assessment" - <a href="https://doi.org/10.3390/jzbg3010002" target="_blank">DOI</a></li>
+                <li>"Comportamiento agresivo en hembras de Jacana spinosa" - <a href="https://doi.org/10.6084/m9.figshare.13348355.v1" target="_blank">DOI</a></li>
+                <li>"Observaciones del comportamiento de ingreso a cavidades del Vencejo de Collar" - <a href="https://doi.org/10.6084/m9.figshare.13562495.v2" target="_blank">DOI</a></li>
+                <li>"Presence of small owls in relation to habitat attributes" - <a href="https://doi.org/10.6084/m9.figshare.13611224" target="_blank">DOI</a></li>
+                <li>"Usurpación de nido de Carpintero del Cardón por parte de Estornino Pinto" - <a href="https://doi.org/10.6084/m9.figshare.13526168.v1" target="_blank">DOI</a></li>
+                <li>"Nido de Lechuzón Orejudo en Salta, Argentina" - <a href="https://doi.org/10.13140/RG.2.2.14981.88809" target="_blank">DOI</a></li>
+                <li>"Vocal activity of the Great Potoo in relation to moonlight in a tropical forest of Costa Rica" - <a href="https://doi.org/10.6084/m9.figshare.13611224" target="_blank">DOI</a></li>
             </ul>
         </div>
     </div>
 </body>
 </html>
+
