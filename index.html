@@ -9,14 +9,15 @@
         /* Estilo general */
         body {
             font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
+            margin: 50px auto;
+            padding: 24px;
+            max-width: 930px;
+            background-color: #fdfdfd;
             color: #212529;
-            line-height: 1.3;
+            line-height: 1.5;
         }
 
-        /* Contenedor principal */
+        /* Contenedor principal
         .container {
             max-width: 900px;
             margin: 50px auto;
@@ -25,14 +26,15 @@
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border: 1px solid #e0e0e0;
-        }
+        } */
 
         /* Encabezados */
-        h1, h2 {
-            text-align: center;
-            color: #34495e;
-            margin-bottom: 25px;
+        h1 {
+            text-align: left;
+            color: #333435;
+            margin-bottom: 27px;
             font-weight: 600;
+            font-size: 2.5em;
         }
 
         /* Títulos de secciones */
@@ -41,7 +43,7 @@
             margin-bottom: 15px;
             border-bottom: 2px solid #34495e;
             padding-bottom: 5px;
-            color: #34495e;
+            color: #303f4d;
             font-weight: 600;
         }
 
@@ -53,7 +55,7 @@
         }
 
         ul li {
-            margin-bottom: 12px;
+            margin-bottom: 13px;
         }
 
         ul li a {
@@ -83,7 +85,7 @@
             height: 14px;
             border-radius: 50%;
             margin-right: 5px;
-            background-color: #dcdde1;
+            background-color: #abacad;
             display: inline-block;
         }
 
@@ -93,15 +95,21 @@
 
         /* Enlaces */
         a {
-            color: #007bff;
+            color: #174371;
             text-decoration: none;
         }
 
-        a:hover {
-            text-decoration: underline;
+        
+        a:link,
+        a:visited,
+        a:active {
+             color: #174371;
+             text-decoration: none; 
         }
-
-        /* Cambiar idioma */
+a:hover {
+            text-decoration: underline;
+            color: #186f4e;
+        }
         .language-switch {
             position: absolute;
             top: 20px;
@@ -109,23 +117,30 @@
         }
 
         .language-switch a {
-            font-size: 0.9em;
+            font-size: 1.05em;
             font-weight: bold;
-            color: #3498db;
+            color: #212529; /* Texto oscuro */
+            background-color: #e9ecef; /* Fondo gris claro */
+            border: 1px solid #d6d8db; /* Borde gris */
+            padding: 8px 12px; /* Espaciado interno del botón */
+            border-radius: 5px; /* Bordes redondeados */
+            text-decoration: none; /* Elimina el subrayado */
+            display: inline-block;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
         }
 
         .language-switch a:hover {
-            text-decoration: underline;
+            background-color: #d6d8db; /* Fondo más oscuro al pasar el mouse */
+            border-color: #c6c8ca; /* Borde más oscuro */
         }
-
         /* Espaciado entre secciones */
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 33px;
         }
 
         /* Separación entre párrafos */
         p {
-            margin-bottom: 15px;
+            margin-bottom: 17px;
         }
     </style>
 </head>
@@ -135,7 +150,6 @@
     </div>
     <div class="container">
         <h1>Valentín Zárate</h1>
-        <h2>Currículum Vitae</h2>
         <p><strong>Dirección:</strong> Puerto Rico s/n, Puerto Iguazú, Misiones</p>
         <p><strong>Teléfono:</strong> +54351 3852365</p>
         <p><strong>Email:</strong> <a href="mailto:valentinzarateee@gmail.com">valentinzarateee@gmail.com</a></p>
