@@ -10,8 +10,8 @@
         body {
             font-family: 'Open Sans', sans-serif;
             margin: 50px auto;
-            padding: 30px;
-            max-width: 800px;
+            padding: 25px;
+            max-width: 1000px;
             background-color: #fdfdfd;
             color: #212529;
             line-height: 1.5;
@@ -102,7 +102,6 @@
             text-decoration: underline;
         }
 
-        /* Cambiar idioma */
         .language-switch {
             position: absolute;
             top: 20px;
@@ -110,23 +109,30 @@
         }
 
         .language-switch a {
-            font-size: 1.2em;
+            font-size: 0.9em;
             font-weight: bold;
-            color: #1b5277;
+            color: #212529; /* Texto oscuro */
+            background-color: #e9ecef; /* Fondo gris claro */
+            border: 1px solid #d6d8db; /* Borde gris */
+            padding: 8px 12px; /* Espaciado interno del botón */
+            border-radius: 5px; /* Bordes redondeados */
+            text-decoration: none; /* Elimina el subrayado */
+            display: inline-block;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
         }
 
         .language-switch a:hover {
-            text-decoration: underline;
+            background-color: #d6d8db; /* Fondo más oscuro al pasar el mouse */
+            border-color: #c6c8ca; /* Borde más oscuro */
         }
-
         /* Espaciado entre secciones */
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 33px;
         }
 
         /* Separación entre párrafos */
         p {
-            margin-bottom: 15px;
+            margin-bottom: 17px;
         }
     </style>
 </head>
