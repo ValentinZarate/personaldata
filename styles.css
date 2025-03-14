@@ -122,39 +122,57 @@ nav ul li a:hover {
 }
 /* CV Section Styling */
 #cv {
-    text-align: left; /* Alineación a la izquierda */
+    text-align: left;
     padding: 40px;
     background-color: #1E1E1E;
     color: #E0E0E0;
 }
 
-#cv h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #BB86FC;
+/* Contenedor Flex para alinear y separar botones */
+#cv .cv-container {
+    display: flex;
+    gap: 20px; /* Espaciado lateral entre botones */
 }
 
-/* CV Links as More Subtle Buttons */
+/* CV Links as Subtle Buttons */
 #cv .cv-link {
     display: inline-block;
-    margin: 8px 0; /* Espaciado vertical */
-    padding: 10px 20px;
-    background-color: #2C2C2C; /* Fondo gris oscuro sobrio */
-    color: #E0E0E0; /* Texto claro */
+    padding: 10px 24px;
+    background-color: #2C2C2C;
+    color: #E0E0E0;
     text-decoration: none;
-    border: 1px solid #444; /* Borde sutil */
-    border-radius: 6px;
     font-size: 1rem;
     font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid #444; /* Borde sutil */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover effect */
 #cv .cv-link:hover {
-    background-color: #3A3A3A; /* Cambio sutil en el hover */
-    transform: translateY(-2px); /* Elevación suave */
+    background-color: #3A3A3A;
+    transform: translateY(-2px);
 }
 
+/* Active effect (cuando se hace clic) */
 #cv .cv-link:active {
+    background-color: #444;
     transform: translateY(0);
-    background-color: #444; /* Color más oscuro al hacer clic */
+}
+
+.pub-card a {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2C2C2C; /* Fondo oscuro */
+    color: #03DAC6;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 1px solid #444; /* Borde sutil */
+}
+
+.pub-card a:hover {
+    background-color: #3A3A3A;
+    color: #BB86FC;
+    transform: translateY(-2px);
 }
