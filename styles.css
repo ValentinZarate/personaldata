@@ -163,6 +163,7 @@ nav ul li a:hover {
 #data {
     text-align: left;
     padding: 40px;
+    background-color: #1E1E1E;
     color: #E0E0E0;
 }
 
@@ -173,20 +174,20 @@ nav ul li a:hover {
 }
 
 /* Subtítulo GitHub Codes */
-#data h3 {
+.pub-card h3 {
     font-size: 1.5rem;
     color: #E0E0E0;
     margin-bottom: 10px;
 }
 
-/* Flexbox para organizar los enlaces horizontalmente */
-.data-container {
+/* Alinear los botones horizontalmente */
+.pub-card {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-/* Estilo para enlaces de código */
+/* Estilo de los enlaces de código */
 .data-link {
     font-family: 'Consolas', 'Courier New', monospace;
     background-color: #2C2C2C;
@@ -226,10 +227,19 @@ nav ul li a:hover {
     transform: translateY(0);
 }
 
-/* Texto del tooltip */
+/* Texto dentro del tooltip */
 .tooltip p {
     color: #E0E0E0;
     font-size: 0.9rem;
     margin: 0;
     line-height: 1.4;
+}
+
+/* Imagen dentro del tooltip */
+.tooltip img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 4px;
 }
