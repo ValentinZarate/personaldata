@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #1E1E1E;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #BB86FC;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #03DAC6;
+}
+
+/* Research and Publication Cards */
+.research-card, .pub-card {
+    background-color: #1E1E1E;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.research-card img, .pub-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.research-card:hover, .pub-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Tooltip Trigger */
+.tooltip-trigger {
+    color: #BB86FC;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.tooltip-trigger:hover {
+    color: #03DAC6;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    width: 320px;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tooltip img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Position Tooltip to the Right */
+.tooltip-right {
+    left: 100%; /* Coloca el tooltip a la derecha del contenedor */
+    top: -10px;
+}
+
+/* Show Tooltip on Hover */
+.pub-card:hover .tooltip {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Special Tooltip Hover for Graph Trigger */
+.tooltip-trigger:hover + .tooltip,
+.tooltip:hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .tooltip {
+        left: 0;
+        right: 0;
+        width: 90%;
+        max-width: 320px;
+    }
+}
