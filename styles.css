@@ -120,3 +120,39 @@ nav ul li a:hover {
         max-width: 320px;
     }
 }
+/* CV Section Styling, usando el # se puede estilizar sin generar un class= "", sino que con el ID directamente*/
+#cv {
+    text-align: center;
+    padding: 40px;
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+}
+
+#cv h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #BB86FC;
+}
+
+/* CV Links as Buttons */
+.cv-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #BB86FC;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cv-link:hover {
+    background-color: #03DAC6;
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+.cv-link:active {
+    transform: translateY(0); /* Efecto de clic */
+}
