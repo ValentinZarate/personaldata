@@ -127,6 +127,29 @@ a:hover {
             display: inline-block;
             transition: background-color 0.3s ease, border-color 0.3s ease;
         }
+        .index-switch {
+            position: absolute;
+            top: 80px;
+            right: 32px;
+        }
+
+        .index-switch a {
+            font-size: 1.05em;
+            font-weight: bold;
+            color: #212529; /* Texto oscuro */
+            background-color: #e9ecef; /* Fondo gris claro */
+            border: 1px solid #d6d8db; /* Borde gris */
+            padding: 8px 12px; /* Espaciado interno del botón */
+            border-radius: 5px; /* Bordes redondeados */
+            text-decoration: none; /* Elimina el subrayado */
+            display: inline-block;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .index-switch a:hover {
+            background-color: #d6d8db; /* Fondo más oscuro al pasar el mouse */
+            border-color: #c6c8ca; /* Borde más oscuro */
+        }
 
         .language-switch a:hover {
             background-color: #d6d8db; /* Fondo más oscuro al pasar el mouse */
@@ -146,6 +169,9 @@ a:hover {
 <body>
     <div class="language-switch">
         <a href="cv_spanish.html">Switch to Spanish</a>
+    </div>
+    <div class="index-switch">
+        <a href="index.html">Back to main page</a>
     </div>
     <div class="container">
         <h1>Valentín Zárate</h1>
