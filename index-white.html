@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>My Research Website</title>
+    <link rel="stylesheet" href="./style2.css" />
+    <title>Valentín Zárate - Research Website</title>
 </head>
 <body>
 
@@ -13,7 +13,7 @@
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research Areas</a></li>
+            <li><a href="#research">Projects</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#data">Data & Insights</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -24,27 +24,43 @@
 
 <!-- About Me Section -->
 <section id="about" class="section">
-    <h1>About Me</h1>
-    <p>
-        I'm a PhD student in Biological Sciences, specializing in primate ecology and animal behavior. 
-        My research focuses on the ecological interactions and behavioral patterns of Mono Caí and other species.
-    </p>
+    <div class="content-wrapper">
+        <div class="text-content">
+            <h1>About Me</h1>
+            <p>
+                I'm a PhD student in Biological Sciences, specializing in animal ecology and conservation. 
+                I study the movement ecology of mammals in production landscapes to identify key areas 
+                for conservation and coexistence between mammals and producers.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="./images/about.jpg" alt="Profile Image">
+        </div>
+    </div>
 </section>
 
 <!-- Research Areas Section -->
 <section id="research" class="section">
-    <h1>Research Areas</h1>
-    <div class="pub-container">
-        <div class="card">
-            <h2>Ecology of Mono Caí</h2>
-            <p>Investigating the social behavior, diet, and ecological interactions of Mono Caí.</p>
-            <img src="./images/monkey-research.jpg" alt="Mono Caí Research">
+    <h1>Research Projects</h1>
+    <div class="project-wrapper">
+        <div class="project-card">
+            <div class="project-text">
+                <h2>Ecology of Mono Caí</h2>
+                <p>Investigating the social behavior, diet, and ecological interactions of Mono Caí.</p>
+            </div>
+            <div class="project-image">
+                <img src="./images/monkey.jpg" alt="Mono Caí">
+            </div>
         </div>
 
-        <div class="card">
-            <h2>Other Species</h2>
-            <p>Exploring the behavioral ecology and population dynamics of other key species.</p>
-            <img src="./images/other-species.jpg" alt="Other Species Research">
+        <div class="project-card">
+            <div class="project-text">
+                <h2>Other Species</h2>
+                <p>Exploring the behavioral ecology and population dynamics of other key species.</p>
+            </div>
+            <div class="project-image">
+                <img src="./images/species.jpg" alt="Other Species">
+            </div>
         </div>
     </div>
 </section>
@@ -52,63 +68,43 @@
 <!-- Publications and Presentations Section -->
 <section id="publications" class="section">
     <h1>Publications & Presentations</h1>
-  <div class="card">    
-            <h3>Title of Paper</h3>
-            <p>Journal Name – Year</p>
-            <p>
-                View <span class="tooltip-trigger">Graph</span>
-            </p>
-            <img src="./images/example-graph.jpg" alt="Graph" />
-
-            <!-- Tooltip -->
-            <div class="tooltip">
-                <strong>Abstract:</strong>  
-                This study explores the effect of environmental changes on the behavior and population dynamics of Mono Caí.
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Portrait_of_a_father.jpg" alt="Example Plot" />
-            </div>
-
+    <div class="pub-card">
+        <h3>Title of Paper</h3>
+        <p>Journal Name – Year</p>
+        <p>
+            View <span class="tooltip-trigger">Graph</span>
+        </p>
+        <div class="tooltip">
+            <strong>Abstract:</strong>  
+            This study explores the effect of environmental changes on the behavior and population dynamics of Mono Caí.
         </div>
-
-        <div class="card">
-            <h3>Conference Presentation</h3>
-            <p>Conference Name – Year</p>
-            <p>
-                View <span class="tooltip-trigger">Graph</span>
-            </p>
-            <img src="./images/example-graph2.jpg" alt="Graph" />
-
-            <!-- Tooltip -->
-            <div class="tooltip">
-                <strong>Abstract:</strong>  
-                This presentation outlines the findings from a long-term study on species interactions in tropical forests.
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Portrait_of_a_father.jpg" alt="Example Plot" />
-            </div>
     </div>
+</section>
 
 <!-- Data & Insights Section -->
-<section id="data">
+<section id="data" class="section">
     <h1>Data & Insights</h1>
-    <h3>GitHub Codes</h3>
-    <div class="data-links">
-        <a href="https://github.com/ValentinZarate/bib_functions/blob/main/Search%20Cylce/cylce.md" target="_blank" class="data-link">
+    <div class="data-wrapper">
+        <a href="https://github.com/ValentinZarate/bib_functions/blob/main/Search%20Cylce/cylce.md" 
+            target="_blank" class="data-link">
             Search Cycle
             <div class="tooltip">
                 <img src="./images/cycle_complete.png" alt="Cycle Image" />
             </div>
         </a>
-
-        <a href="https://github.com/ValentinZarate/capuchins_hrs/blob/main/sim_akde.md" target="_blank" class="data-link">
+        <a href="https://github.com/ValentinZarate/capuchins_hrs/blob/main/sim_akde.md" 
+            target="_blank" class="data-link">
             sim_akde
         </a>
-
-        <a href="https://github.com/ValentinZarate/bib_functions/blob/main/functions/all_bib_to_df.md" target="_blank" class="data-link">
+        <a href="https://github.com/ValentinZarate/bib_functions/blob/main/functions/all_bib_to_df.md" 
+            target="_blank" class="data-link">
             all_bib_to_df
         </a>
     </div>
 </section>
 
 <!-- CV Section -->
-<section id="cv">
+<section id="cv" class="section">
     <h1>My CV</h1>
     <div class="cv-container">
         <a href="./cv_english.html" target="_blank" class="cv-link">CV (English)</a>
@@ -117,7 +113,7 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact">
+<section id="contact" class="section">
     <h1>Contact</h1>
     <form id="contact-form">
         <input type="text" id="name" placeholder="Your Name" required />
@@ -125,7 +121,6 @@
         <textarea id="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
     </form>
-    <p id="success-message" style="display:none;">Thanks for reaching out!</p>
 </section>
 
 <script src="./script2.js"></script>
