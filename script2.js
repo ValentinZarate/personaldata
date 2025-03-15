@@ -43,30 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         tooltip.style.left = `${left}px`;
     }
 
-    // ✅ SMOOTH SCROLL (Desplazamiento suave entre secciones)
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // ✅ STICKY HEADER (Cambio de color o tamaño en el scroll)
-    const header = document.querySelector('.sidebar');
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-});
 // Scroll Progress Bar
 window.addEventListener('scroll', () => {
     const scrollProgress = document.getElementById('scroll-progress');
@@ -74,3 +50,17 @@ window.addEventListener('scroll', () => {
     const progress = (window.scrollY / totalHeight) * 100;
     scrollProgress.style.width = `${progress}%`;
 });
+
+
+const typewriterText = "Valentín Zárate - Ph.D. Student";
+let index = 0;
+
+function typeWriter() {
+    if (index < typewriterText.length) {
+        document.getElementById('typewriter').innerHTML += typewriterText.charAt(index);
+        index++;
+        setTimeout(typeWriter, 40);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', typeWriter);
