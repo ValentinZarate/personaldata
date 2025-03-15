@@ -51,7 +51,7 @@ window.addEventListener('scroll', () => {
     scrollProgress.style.width = `${progress}%`;
 });
 
-
+//
 const typewriterText = "Valentín Zárate - Ph.D. Student";
 let index = 0;
 
@@ -64,4 +64,3 @@ function typeWriter() {
 }
 
 document.addEventListener('DOMContentLoaded', typeWriter);
-//
