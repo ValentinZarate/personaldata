@@ -289,3 +289,23 @@ button:hover {
     z-index: 9999;
     transition: width 0.2s ease;
 }
+
+/* Typewriter Effect */
+#typewriter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #214107;
+    white-space: nowrap;
+    overflow: hidden;
+    /*border-right: 3px solid #6a5acd;*/ /*lo saco por que rompe las pelotas*/
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #214107;
+    }
+}
