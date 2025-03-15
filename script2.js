@@ -48,20 +48,14 @@ const typewriterText = "Valentín Zárate - Ph.D. Student";
 let index = 0;
 
 function typeWriter() {
-    if (index < typewriterText.length) {
-        document.getElementById('typewriter').innerHTML += typewriterText.charAt(index);
-        index++;
-        setTimeout(typeWriter, 40);
+    const typewriter = document.getElementById('typewriter');
+    if (typewriter) {
+        if (index < typewriterText.length) {
+            typewriter.innerHTML += typewriterText.charAt(index);
+            index++;
+            setTimeout(typeWriter, 40);
+        }
     }
 }
 
 document.addEventListener('DOMContentLoaded', typeWriter);
-
-//
-// Scroll Progress Bar
-window.addEventListener('scroll', () => {
-    const scrollProgress = document.getElementById('scroll-progress');
-    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const progress = (window.scrollY / totalHeight) * 100;
-    scrollProgress.style.width = `${progress}%`;
-});
