@@ -101,10 +101,10 @@ p {
 .project-wrapper:hover {
     transform: translateY(-5px); /* Efecto hover suave */
 }
-.project-wrapper:nth-child(odd) {
+.project-wrapper:nth-of-type(odd) {
     flex-direction: row; /* Imagen a la izquierda */
 }
-.project-wrapper:nth-child(even) {
+.project-wrapper:nth-of-type(even) {
     flex-direction: row-reverse; /* Alterna la posición para los pares */
     
 /* Project Image Styling */
