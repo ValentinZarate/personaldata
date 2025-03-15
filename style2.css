@@ -1,44 +1,141 @@
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #dae5c8;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Sidebar */
-.sidebar {
-    background-color: #E0E0E0;
+.main-content {
+    margin-left: 180px;
     padding: 20px;
 }
 
-/* Section Titles */
-h1 {
-    font-size: 2rem;
-    color: #1A1A1A;
+/* Sidebar Navigation */
+.sidebar {
+    background-color: #f0f0f3;
+    width: 160px;
+    height: 100%;
+    position: fixed;
+    padding-top: 2rem;
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
     margin-bottom: 20px;
 }
 
-/* About Me Image */
+.sidebar ul li a {
+    color: #1e1b1b;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #b7cfa2;
+}
+
+/* Sticky Header */
+.sidebar.scrolled {
+    background-color: #d3e0c8; /* Cambio de color cuando hace scroll */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.content-wrapper {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
 .image-content img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 140px; /* Ajustar el tamaño según necesidad */
+    height: 180px;
+    object-fit: cover;
+      object-fit: cover;
+    border-radius: 12px; /* Añade espacio entre la imagen y el texto */
+}
+/* Research Projects Section */
+#research {
+    display: flex;
+    flex-direction: column; /* Apila las subsecciones verticalmente */
+    gap: 30px; /* Espacio entre subsecciones */
 }
 
-/* Data Tooltip (Smaller) */
-.small-tooltip {
-    width: 180px;
+.project-wrapper {
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+    gap: 20px; /* Espacio entre imagen y texto */
+    background-color: #e4e8d8; 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
 }
 
-/* Code Links */
+.project-wrapper:hover {
+    transform: translateY(-5px); /* Efecto hover suave */
+}
+
+/* Project Image Styling */
+.project-image img {
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Project Text Styling */
+.project-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.project-text p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+
+/*Publicaction section*/
+
+.pub-card {
+    background-color: #e4e8d8;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 25px; 
+    box-shadow: 2px 4px 12px rgba(0, 0.2, 0, 0.2);
+    transition: transform 0.6s ease;
+}
+.pub-card:hover {
+    transform: translateY(-5px); /* Efecto hover suave */
+}
+
+
+/* Data Links */
+.data-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
 .data-link {
-    font-family: 'Consolas', 'Courier New', monospace;
+    font-family: 'Courier New', monospace;
     background-color: #2C2C2C;
-    color: #03DAC6;
-    padding: 6px 10px;
-    border-radius: 5px;
+    color: #02eead;
+    padding: 8px 12px;
+    border-radius: 2px;
+    transition: background-color 0.8s ease;
 }
 
 .data-link:hover {
@@ -46,86 +143,138 @@ h1 {
     color: #BB86FC;
 }
 
-/* CV Styling */
-.cv-link {
-    background-color: #2C2C2C;
-    color: #FFFFFF;
-    padding: 8px 16px;
-    border-radius: 8px;
-}
-
-.cv-link:hover {
-    background-color: #444;
-}
-
-/* Hover Effect */
-.project-card:hover {
-    transform: scale(1.03);
-}
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    padding: 10px;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    display: block;
-}
-
-.sidebar ul li a:hover {
-    color: #007BFF;
-}
-
-/* Section Styling */
+/* Hover Effects */
 .section {
-    margin-left: 240px;
-    padding: 40px;
-}
-
-/* Project Card Styling */
-.project-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    transition: transform 0.2s ease;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.section:hover {
+    transform: translateY(-3px);
+}
+/* Card Styling - Expansión y movimiento */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: visible;
 }
 
-/* Data Links Styling */
-.data-link {
-    color: #007BFF;
-    text-decoration: none;
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 8px 24px rgba(0,0,0,0.5);
+}
+
+/* Tooltip Trigger */
+.tooltip-trigger {
+    color: #6a5acd;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
-.data-link:hover {
-    color: #0056b3;
+/* Tooltip Styling */
+.tooltip {
+    position: absolute; /* Change from fixed to absolute */
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: none;
+    width: 320px;
+    z-index: 9999; /* Ensure it appears above other elements */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    transform: translateY(10px);
 }
 
-/* Contact Form */
-form input, form textarea, form button {
-    width: 100%;
-    margin-bottom: 10px;
+/* Show Tooltip */
+.tooltip-visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
+/* Ensure parent container allows overflow */
+.card {
+    position: relative;
+    overflow: visible; /* Ensure tooltip is not cut off */
+}
+
+/* Special Tooltip Hover for Graph Trigger */
+.tooltip-trigger:hover + .tooltip,
+.tooltip:hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Tooltip Image Size */
+.tooltip img {
+    width: 100%; /* O usa un valor fijo como 80% o 300px */
+    max-width: 200px; /* Controla el tamaño máximo */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.tooltip-right {
+    left: calc(100% + 10px); /* Añade espacio entre el tooltip y el contenedor */
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .tooltip {
+        left: 0;
+        right: 0;
+        width: 90%;
+        max-width: 320px;
+        transform: translateY(5px);
+    }
+}
+
+/* Button Styling */
 button {
-    background-color: #007BFF;
-    color: white;
+    background-color: #b7cfa2;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #334f1b;
+    color : white;
+    font-weight: bold;
 }
 
+/* CV */
+/* Data Links */
+.cv-link {
+    font-family: 'Arial';
+    background-color: #2C2C2C;
+    color: #02eead;
+    padding: 8px 12px;
+    border-radius: 2px;
+    transition: background-color 0.8s ease;
+}
+
+.cv-container {
+    display: flex;
+    gap: 20px;
+}
+
+.cv-link:hover {
+    background-color: #2C2C2C;
+ color: #BB86FC;
+}
