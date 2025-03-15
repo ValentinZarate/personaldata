@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tooltip.style.top = `${top}px`;
         tooltip.style.left = `${left}px`;
     }
-
+//
 // Scroll Progress Bar
 window.addEventListener('scroll', () => {
     const scrollProgress = document.getElementById('scroll-progress');
@@ -64,3 +64,4 @@ function typeWriter() {
 }
 
 document.addEventListener('DOMContentLoaded', typeWriter);
+//
