@@ -1,12 +1,17 @@
 /* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #dae5c8;
     color: #333;
     margin: 0;
     padding: 0;
 }
-
+p {
+    font-size: 16px;
+    font-weight: 480;
+    line-height: 1.6;
+    color: #000000;
+}
 .main-content {
     margin-left: 180px;
     padding: 20px;
