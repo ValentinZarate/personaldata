@@ -243,24 +243,6 @@ body {
     }
 }
 
-/* Button Styling */
-button {
-    background-color: #b7cfa2;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #334f1b;
-    color : white;
-    font-weight: bold;
-}
-
 /* CV */
 /* Data Links */
 .cv-link {
