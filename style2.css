@@ -7,17 +7,61 @@ body {
     padding: 0;
 }
 
-/* Sidebar Navigation */
+/* Sidebar */
 .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 220px;
-    height: 100%;
     background-color: #E0E0E0;
-    padding-top: 20px;
+    padding: 20px;
 }
 
+/* Section Titles */
+h1 {
+    font-size: 2rem;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+
+/* About Me Image */
+.image-content img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* Data Tooltip (Smaller) */
+.small-tooltip {
+    width: 180px;
+}
+
+/* Code Links */
+.data-link {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #2C2C2C;
+    color: #03DAC6;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.data-link:hover {
+    background-color: #3A3A3A;
+    color: #BB86FC;
+}
+
+/* CV Styling */
+.cv-link {
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.cv-link:hover {
+    background-color: #444;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: scale(1.03);
+}
 .sidebar ul {
     list-style-type: none;
     padding: 0;
