@@ -14,12 +14,13 @@ body {
 
 /* Sidebar Navigation */
 .sidebar {
-    background-color: #f0f0f3;
+    background-color: #495950;
     width: 160px;
     height: 100%;
     position: fixed;
     padding-top: 2rem;
     left: 0;
+    padding-left: 1rem;
 }
 
 .sidebar ul {
@@ -32,7 +33,7 @@ body {
 }
 
 .sidebar ul li a {
-    color: #1e1b1b;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     display: block;
@@ -43,6 +44,7 @@ body {
 
 .sidebar ul li a:hover {
     background-color: #b7cfa2;
+    color: black;
 }
 
 /* Sticky Header */
@@ -53,7 +55,7 @@ body {
 }
 
 .static-title {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     font-weight: bold;
     color: #1A1A1A;
     text-align: left;
