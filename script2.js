@@ -44,17 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+
 const typewriterText = "Valentín Zárate - Ph.D. Student";
 let index = 0;
 
 function typeWriter() {
-    const typewriter = document.getElementById('typewriter');
-    if (typewriter) {
-        if (index < typewriterText.length) {
-            typewriter.innerHTML += typewriterText.charAt(index);
-            index++;
-            setTimeout(typeWriter, 40);
-        }
+    if (index < typewriterText.length) {
+        document.getElementById('typewriter').innerHTML += typewriterText.charAt(index);
+        index++;
+        setTimeout(typeWriter, 40);
     }
 }
 
