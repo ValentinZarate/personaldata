@@ -42,16 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
         tooltip.style.top = `${top}px`;
         tooltip.style.left = `${left}px`;
     }
-//
-// Scroll Progress Bar
-window.addEventListener('scroll', () => {
-    const scrollProgress = document.getElementById('scroll-progress');
-    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const progress = (window.scrollY / totalHeight) * 100;
-    scrollProgress.style.width = `${progress}%`;
-});
 
-//
+
 const typewriterText = "Valentín Zárate - Ph.D. Student";
 let index = 0;
 
@@ -64,3 +56,12 @@ function typeWriter() {
 }
 
 document.addEventListener('DOMContentLoaded', typeWriter);
+
+//
+// Scroll Progress Bar
+window.addEventListener('scroll', () => {
+    const scrollProgress = document.getElementById('scroll-progress');
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (window.scrollY / totalHeight) * 100;
+    scrollProgress.style.width = `${progress}%`;
+});
