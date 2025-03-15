@@ -15,121 +15,140 @@
             <li><a href="#about">About Me</a></li>
             <li><a href="#research">Projects</a></li>
             <li><a href="#publications">Publications</a></li>
-            <li><a href="#data">Data & Insights</a></li>
+            <li><a href="#data">Codes</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#cv">CV</a></li>
         </ul>
     </nav>
 </aside>
 
-<!-- About Me Section -->
-<section id="about" class="section">
-    <div class="content-wrapper">
-        <div class="image-content">
-            <img src="./images/me.png" alt="Profile Image">
+<div class="main-content">
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="content-wrapper">
+            <div class="image-content">
+                <img src="https://raw.githubusercontent.com/ValentinZarate/personaldata/gh-pages/images/Mono%201-10.jpg" alt="Profile Image">
+            </div>
+            <div class="text-content">
+                <h1>About Me</h1>
+                <p>
+                    I'm a PhD student in Biological Sciences, specializing in animal ecology and conservation. 
+                    I study the movement ecology of mammals in production landscapes to identify key areas 
+                    for conservation and coexistence between mammals and producers.
+                </p>
+            </div>
         </div>
-        <div class="text-content">
-            <h1>About Me</h1>
+    </section>
+
+    <!-- Research Projects Section -->
+    <section id="research" class="section">
+        <h1>Research Projects</h1>
+        <div class="project-wrapper">
+            <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/ValentinZarate/personaldata/gh-pages/images/mono_emilio.jpeg" alt="Mono Caí">
+                </div>
+                <div class="project-text">
+                    <h2>Ecology of Mono Caí</h2>
+                  
+                    <p>Investigating the social behavior, diet, and ecological interactions of Mono Caí.</p>
+                </div>
+            </div>
+            <div class="project-wrapper">
+            <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/ValentinZarate/personaldata/gh-pages/images/mono_emilio.jpeg" alt="Mono Caí">
+                </div>
+                <div class="project-text">
+                <h2>Other Species</h2>
+                <p>Exploring the behavioral ecology and population dynamics of other key species.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <h1>Publications & Presentations</h1>
+        <div class="pub-wrapper">
+        <div class="pub-card">
+            <h3>Title of Paper</h3>
+            <p>Journal Name – Year</p>
             <p>
-                I'm a PhD student in Biological Sciences, specializing in animal ecology and conservation. 
-                I study the movement ecology of mammals in production landscapes to identify key areas 
-                for conservation and coexistence between mammals and producers.
+                View <span class="tooltip-trigger">Graph</span>
             </p>
+            <div class="tooltip">
+                <strong>Abstract:</strong>  
+                This study explores the effect of environmental changes on the behavior and population dynamics of Mono Caí.
+             </div>
         </div>
-    </div>
-</section>
-
-<!-- Research Areas Section -->
-<section id="research" class="section">
-    <h1>Research Projects</h1>
-    <div class="project-wrapper">
-        <div class="project-card">
-            <div class="project-text">
-                 <h2>Primates in plantations</h2>
-                <p>Focused on studying movement and trophic ecology of Black Capuchin Monkeys (_Sapajus nigritus_) living in pine plantations.</p>
-            </div>
-            <div class="project-image">
-                <img src="./images/monkey.jpg" alt="Mono Caí">
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-text">
-               <h2>Other Species</h2>
-                <p>Projects including ecology and behavior of other mammals and birds</p>
-            </div>
-            <div class="project-image">
-                <img src="./images/species.jpg" alt="Other Species">
+            <div class="pub-card">
+            <h3>Title of Paper2</h3>
+            <p>Journal Name – Year</p>
+            <p>
+                View <span class="tooltip-trigger">Graph</span>
+            </p>
+            <div class="tooltip">
+                <strong>Abstract:</strong>  
+                This study explores the effect of environmental changes on the behavior and population dynamics of Mono Caí.
             </div>
         </div>
     </div>
-</section>
+    </section>
 
-<!-- Publications Section -->
-<section id="publications" class="section">
-    <h1>Publications & Presentations</h1>
-    <div class="pub-card">
-        <h3>Title of Paper</h3>
-        <p>Journal Name – Year</p>
-        <p>
-            View <span class="tooltip-trigger">Graph</span>
-        </p>
-        <div class="tooltip">
-            <strong>Abstract:</strong>  
-            This study explores the effect of environmental changes on the behavior and population dynamics of Mono Caí.
+    <!-- Data & Insights Section -->
+    <section id="data" class="section">
+        <h1>Codes Examples</h1>
+        <div class="data-wrapper">
+            <!-- Search Cycle -->
+            <a href="https://github.com/ValentinZarate/bib_functions/blob/main/Search%20Cylce/cylce.md" 
+                target="_blank" class="data-link">
+                Search Cycle
+                <div class="tooltip small-tooltip">
+                    <img src="./images/cycle_complete.png" alt="Cycle Image" />
+                </div>
+            </a>
+
+            <!-- sim_akde -->
+            <a href="https://github.com/ValentinZarate/capuchins_hrs/blob/main/sim_akde.md" 
+                target="_blank" class="data-link">
+                sim_akde
+                <div class="tooltip small-tooltip">
+                    <p>The function processes multiple telemetry datasets, estimates movement models, and creates AKDEs.</p>
+                </div>
+            </a>
+
+            <!-- all_bib_to_df -->
+            <a href="https://github.com/ValentinZarate/bib_functions/blob/main/functions/all_bib_to_df.md" 
+                target="_blank" class="data-link">
+                all_bib_to_df
+                <div class="tooltip small-tooltip">
+                    <p>This function processes BibTeX files to filter entries based on keywords.</p>
+                </div>
+            </a>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Data & Insights Section -->
-<section id="data" class="section">
-    <h1>Data & Insights</h1>
-    <div class="data-wrapper">
-        <a href="https://github.com/ValentinZarate/bib_functions/blob/main/Search%20Cylce/cylce.md" 
-            target="_blank" class="data-link">
-            Search Cycle
-            <div class="tooltip small-tooltip">
-                <img src="./images/cycle_complete.png" alt="Cycle Image" />
-            </div>
-        </a>
-        <a href="https://github.com/ValentinZarate/capuchins_hrs/blob/main/sim_akde.md" 
-            target="_blank" class="data-link">
-            sim_akde
-            <div class="tooltip small-tooltip">
-                <p>The function processes multiple telemetry datasets, estimates movement models, and creates AKDEs.</p>
-            </div>
-        </a>
-        <a href="https://github.com/ValentinZarate/bib_functions/blob/main/functions/all_bib_to_df.md" 
-            target="_blank" class="data-link">
-            all_bib_to_df
-            <div class="tooltip small-tooltip">
-                <p>This function processes BibTeX files to filter entries based on keywords.</p>
-            </div>
-        </a>
-    </div>
-</section>
+    <!-- CV Section -->
+    <section id="cv" class="section">
+        <h1>My CV</h1>
+        <div class="cv-container">
+            <a href="./cv_english.html" target="_blank" class="cv-link">CV (English)</a>
+            <a href="./cv_spanish.html" target="_blank" class="cv-link">CV (Spanish)</a>
+        </div>
+    </section>
 
-<!-- CV Section -->
-<section id="cv" class="section">
-    <h1>My CV</h1>
-    <div class="cv-container">
-        <a href="./cv_english.html" target="_blank" class="cv-link">CV (English)</a>
-        <a href="./cv_spanish.html" target="_blank" class="cv-link">CV (Spanish)</a>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="section">
-    <h1>Contact</h1>
-    <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h1>Contact</h1>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</div>
 
 <script src="./script2.js"></script>
 </body>
 </html>
+
 
