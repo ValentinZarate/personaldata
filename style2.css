@@ -1,81 +1,167 @@
 /* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #FAFAFA;
+    font-family: 'Calibri', serif;
+    font-size: 18x;
+    background-color: #f7f7f7;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Header Styling */
-header {
-    background-color: #2C3E50;
-    padding: 15px;
+/* Sidebar Navigation */
+.sidebar {
+    background-color: #f0f0f3;
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    padding-top: 2rem;
+    left: 0;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-nav ul li a {
-    color: white;
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: #1e1b1b;
     text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.2s;
-}
-
-nav ul li a:hover {
-    color: #03DAC6;
-}
-
-/* Research Container */
-.research-container {
-    display: flex;
-    gap: 20px;
-}
-
-/* Data Links */
-.data-links {
-    display: flex;
-    gap: 12px;
-}
-
-/* Tooltip */
-.tooltip {
-    display: none;
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
+    font-size: 1.4rem;
+    display: block;
     padding: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 10;
+    border-radius: 8px;
+    transition: background 0.3s;
 }
+
+.sidebar ul li a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Section Styling */
+.section {
+    margin-left: 240px;
+    margin-bottom:10px;
+    padding: 40px;
+}
+
+/* Card Styling - Expansión y movimiento */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: visible;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 8px 24px rgba(0,0,0,0.5);
+}
+.pub-container {
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.2);
+}
+/* Tooltip Trigger */
+.tooltip-trigger {
+    color: #6a5acd;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: absolute; /* Change from fixed to absolute */
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: none;
+    width: 320px;
+    z-index: 9999; /* Ensure it appears above other elements */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    transform: translateY(10px);
+}
+
+/* Show Tooltip */
+.tooltip-visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ensure parent container allows overflow */
+.card {
+    position: relative;
+    overflow: visible; /* Ensure tooltip is not cut off */
+}
+
+.pub-container:hover .tooltip {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Special Tooltip Hover for Graph Trigger */
+.tooltip-trigger:hover + .tooltip,
+.tooltip:hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Tooltip Image Size */
 .tooltip img {
-    width: 100%;
+    width: 100%; /* O usa un valor fijo como 80% o 300px */
+    max-width: 200px; /* Controla el tamaño máximo */
+    height: auto; /* Mantiene las proporciones de la imagen */
     margin-top: 10px;
     border-radius: 4px;
 }
-.data-link:hover .tooltip {
-    display: block;
+.pub-container {
+    position: relative; /* Se posicionará con respecto a este contenedor */
+}
+.tooltip-right {
+    left: calc(100% + 10px); /* Añade espacio entre el tooltip y el contenedor */
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .tooltip {
+        left: 0;
+        right: 0;
+        width: 90%;
+        max-width: 320px;
+        transform: translateY(5px);
+    }
 }
 
-/* CV Links */
-.cv-container {
-    display: flex;
-    gap: 20px;
-}
-
-.cv-link {
-    background-color: #2C3E50;
+/* Button Styling */
+button {
+    background-color: #6a5acd;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.cv-link:hover {
-    background-color: #1E2A38;
+button:hover {
+    background-color: #483d8b;
+}
+
+.pub-container {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
 }
