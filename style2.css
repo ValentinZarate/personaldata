@@ -1,0 +1,77 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FAFAFA;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #2C3E50;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #03DAC6;
+}
+
+/* Research Container */
+.research-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Data Links */
+.data-links {
+    display: flex;
+    gap: 12px;
+}
+
+/* Tooltip */
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.data-link:hover .tooltip {
+    display: block;
+}
+
+/* CV Links */
+.cv-container {
+    display: flex;
+    gap: 20px;
+}
+
+.cv-link {
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cv-link:hover {
+    background-color: #1E2A38;
+}
