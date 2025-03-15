@@ -40,10 +40,10 @@ p {
 .sidebar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    display: block;
-    padding: 8px;
-    border-radius: 8px;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 8px 9px;
+    border-radius: 6px;
     transition: background 0.3s;
 }
 
@@ -60,7 +60,7 @@ p {
 }
 
 .static-title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     font-weight: bold;
     color: #1A1A1A;
     text-align: left;
