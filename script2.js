@@ -1,12 +1,13 @@
-// Interactivity for tooltips
-const tooltips = document.querySelectorAll('.tooltip-trigger');
+// Tooltip interactivity
+const triggers = document.querySelectorAll('.data-link');
 
-tooltips.forEach(trigger => {
-    const tooltip = trigger.nextElementSibling;
-    trigger.addEventListener('mouseenter', () => {
+triggers.forEach(trigger => {
+    const tooltip = trigger.querySelector('.tooltip');
+    
+    trigger.addEventListener('mouseover', () => {
         tooltip.style.display = 'block';
     });
-    trigger.addEventListener('mouseleave', () => {
+    trigger.addEventListener('mouseout', () => {
         tooltip.style.display = 'none';
     });
 });
