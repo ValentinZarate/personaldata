@@ -312,3 +312,73 @@ button:hover {
         border-color: #214107;
     }
 }
+
+
+/* Contact Section */
+#contact-form {
+    display: flex;
+    flex-wrap: wrap; /* Para que sea responsivo */
+    gap: 10px; /* Espacio entre los elementos */
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-form input,
+#contact-form textarea {
+    flex: 1; /* Para que todos los campos tengan el mismo tamaño */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #bb86fc;
+    outline: none;
+}
+
+/* Tamaño específico para el textarea */
+#contact-form textarea {
+    flex: 2; /* Hace que el textarea sea un poco más ancho */
+    height: 48px;
+    resize: none; /* Evita que se redimensione */
+}
+/* Button Styling */
+
+#contact-form button {
+    background-color: #b7cfa2;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+#contact-form button:hover {
+    background-color: #334f1b;
+    color : white;
+    font-weight: bold;
+}
+
+/* Asegura que todo esté alineado */
+#contact-form input,
+#contact-form textarea,
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    #contact-form {
+        flex-direction: column;
+    }
+
+    #contact-form input,
+    #contact-form textarea,
+    #contact-form button {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    }
+}
+
