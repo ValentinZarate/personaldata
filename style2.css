@@ -1,8 +1,7 @@
 /* General Styling */
 body {
-    font-family: 'Calibri', serif;
-    font-size: 18x;
-    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,12 +9,13 @@ body {
 
 /* Sidebar Navigation */
 .sidebar {
-    background-color: #f0f0f3;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 220px;
     height: 100%;
-    position: fixed;
-    padding-top: 2rem;
-    left: 0;
+    background-color: #E0E0E0;
+    padding-top: 20px;
 }
 
 .sidebar ul {
@@ -24,144 +24,64 @@ body {
 }
 
 .sidebar ul li {
-    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .sidebar ul li a {
-    color: #1e1b1b;
     text-decoration: none;
-    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
     display: block;
-    padding: 8px;
-    border-radius: 8px;
-    transition: background 0.3s;
 }
 
 .sidebar ul li a:hover {
-    background-color: #e0e0e0;
+    color: #007BFF;
 }
 
 /* Section Styling */
 .section {
     margin-left: 240px;
-    margin-bottom:10px;
     padding: 40px;
 }
 
-/* Card Styling - Expansión y movimiento */
-.card {
-    background-color: #ffffff;
+/* Project Card Styling */
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 16px;
-    box-shadow: 2px 4px 12px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: visible;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 4px 8px 24px rgba(0,0,0,0.5);
+.project-card:hover {
+    transform: translateY(-5px);
 }
-.pub-container {
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 2px 4px 12px rgba(0,0,0,0.2);
-}
-/* Tooltip Trigger */
-.tooltip-trigger {
-    color: #6a5acd;
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: 600;
+
+/* Data Links Styling */
+.data-link {
+    color: #007BFF;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
-/* Tooltip Styling */
-.tooltip {
-    position: absolute; /* Change from fixed to absolute */
-    background-color: #ffffff;
-    padding: 16px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    display: none;
-    width: 320px;
-    z-index: 9999; /* Ensure it appears above other elements */
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.2s ease;
-    transform: translateY(10px);
+.data-link:hover {
+    color: #0056b3;
 }
 
-/* Show Tooltip */
-.tooltip-visible {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+/* Contact Form */
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-/* Ensure parent container allows overflow */
-.card {
-    position: relative;
-    overflow: visible; /* Ensure tooltip is not cut off */
-}
-
-.pub-container:hover .tooltip {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Special Tooltip Hover for Graph Trigger */
-.tooltip-trigger:hover + .tooltip,
-.tooltip:hover {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-/* Tooltip Image Size */
-.tooltip img {
-    width: 100%; /* O usa un valor fijo como 80% o 300px */
-    max-width: 200px; /* Controla el tamaño máximo */
-    height: auto; /* Mantiene las proporciones de la imagen */
-    margin-top: 10px;
-    border-radius: 4px;
-}
-.pub-container {
-    position: relative; /* Se posicionará con respecto a este contenedor */
-}
-.tooltip-right {
-    left: calc(100% + 10px); /* Añade espacio entre el tooltip y el contenedor */
-    top: 50%;
-    transform: translateY(-50%);
-}
-/* Responsive Fix */
-@media (max-width: 768px) {
-    .tooltip {
-        left: 0;
-        right: 0;
-        width: 90%;
-        max-width: 320px;
-        transform: translateY(5px);
-    }
-}
-
-/* Button Styling */
 button {
-    background-color: #6a5acd;
+    background-color: #007BFF;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #483d8b;
+    background-color: #0056b3;
 }
 
-.pub-container {
-    display: flex;
-    gap: 60px;
-    flex-wrap: wrap;
-}
