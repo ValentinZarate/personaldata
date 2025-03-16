@@ -101,12 +101,7 @@ p {
 .project-wrapper:hover {
     transform: translateY(-5px); /* Efecto hover suave */
 }
-.project-wrapper:nth-of-type(odd) {
-    flex-direction: row; /* Imagen a la izquierda */
-}
-.project-wrapper:nth-of-type(even) {
-    flex-direction: row-reverse; /* Alterna la posición para los pares */
-    
+
 /* Project Image Styling */
 .project-image img {
     width: 140px;
