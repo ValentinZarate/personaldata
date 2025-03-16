@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open sans', sans-serif;
     background-color: #dae5c8;
     color: #333;
     margin: 0;
@@ -23,8 +23,7 @@ p {
     width: 160px;
     height: 100%;
     position: fixed;
-    padding-top: 2rem;
-    left: 0;
+    padding-top: 3.3rem;
     padding-left: 1rem;
 }
 
@@ -40,16 +39,16 @@ p {
 .sidebar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.4rem;
-    display: inline-block;
-    padding: 8px 9px;
+    font-size: 1.2rem;
+    display: inline-block; /* Solo ocupa el espacio de las letras */
+    padding: 9px 13px;
     border-radius: 6px;
     transition: background 0.3s;
 }
 
 .sidebar ul li a:hover {
     background-color: #b7cfa2;
-    color: black;
+  color:black;
 }
 
 /* Sticky Header */
@@ -60,13 +59,12 @@ p {
 }
 
 .static-title {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     font-weight: bold;
     color: #1A1A1A;
     text-align: left;
     margin-top: 40px;
 }
-
 .content-wrapper {
     display: flex;
     align-items: center; /* Centra verticalmente */
@@ -114,7 +112,7 @@ p {
 .project-text h2 {
     font-size: 1.5rem;
     margin-bottom: 8px;
-    color: #1a1a1a;
+    color: #000000;
 }
 
 .project-text p {
@@ -164,15 +162,12 @@ p {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     transition: transform 0.2s ease;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .section:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 /* Card Styling - Expansión y movimiento */
 .card {
@@ -248,16 +243,8 @@ p {
     top: 50%;
     transform: translateY(-50%);
 }
-/* Responsive Fix */
-@media (max-width: 768px) {
-    .tooltip {
-        left: 0;
-        right: 0;
-        width: 90%;
-        max-width: 320px;
-        transform: translateY(5px);
-    }
-}
+
+
 
 /* CV */
 /* Data Links */
@@ -278,6 +265,17 @@ p {
 .cv-link:hover {
     background-color: #2C2C2C;
  color: #BB86FC;
+}
+
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6px;
+    background-color: #678052;
+    width: 0;
+    z-index: 9999;
+    transition: width 0.2s ease;
 }
 
 /* Typewriter Effect */
@@ -368,4 +366,5 @@ p {
         width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
     }
 }
+
 
