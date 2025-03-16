@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         trigger.addEventListener('mouseleave', () => {
             tooltip.classList.remove('tooltip-visible', 'tooltip-right');
         });
-
+ 
         tooltip.addEventListener('mouseenter', () => {
             tooltip.classList.add('tooltip-visible', 'tooltip-right');
         });
