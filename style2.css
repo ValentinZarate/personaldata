@@ -163,8 +163,8 @@ p {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 50px;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(3px);
+    transition: opacity 3s ease, transform 3s ease;
 }
 
 .section:hover {
