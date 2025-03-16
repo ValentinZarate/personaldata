@@ -102,12 +102,18 @@ p {
 
 /* Project Image Styling */
 .project-image img {
-    width: 140px;
+    width: 160px;
     height: 180px;
     object-fit: cover;
     border-radius: 12px;
 }
-
+.project-image2 img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    object-position:right center;
+    border-radius: 12px;
+}
 /* Project Text Styling */
 .project-text h2 {
     font-size: 1.5rem;
