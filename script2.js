@@ -88,3 +88,33 @@ function typeWriter() {
 }
 
 document.addEventListener('DOMContentLoaded', typeWriter);
+
+// Scroll Animation (Fade-In)
+const elements = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        }
+    });
+}, { threshold: 0.1 }); // Se activará cuando el 10% del elemento esté visible
+
+elements.forEach(element => {
+    observer.observe(element);
+});
+
+// Slide-In (animación para imágenes y texto)
+const slideElements = document.querySelectorAll('.project-wrapper');
+
+const slideObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('slide-in');
+        }
+    });
+}, { threshold: 0.2 });
+
+slideElements.forEach(slide => {
+    slideObserver.observe(slide);
+});
