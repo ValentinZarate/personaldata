@@ -103,15 +103,17 @@ body {
 /* Positioning for reverse layout */
 .content-wrapper {
     display: flex;
-    background-color:#e7eae0;
+    background-color:#f2f4ed;
     padding:12px;
     border-radius:8px;
+    margin-bottom:12px
     align-items: center;
     gap: 20px;
   flex-wrap: nowrap;
 }
 .text-content {
     flex: 1; 
+    font-size:18px;
 }
 
 /* Responsive Design */
@@ -142,9 +144,10 @@ body {
 }
 .content-wrapper2 {
     display: flex;
-    background-color:#e7eae0;
+    background-color:#f2f4ed;
     padding:12px;
     border-radius:8px;
+    margin-bottom:12px;
     align-items: center;
     gap: 20px;
   flex-wrap: nowrap;
