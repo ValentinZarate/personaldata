@@ -47,3 +47,4 @@ document.querySelectorAll('.sidebar ul li a').forEach(link => {
         link.classList.add('active');
     });
 });
+
