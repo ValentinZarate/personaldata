@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
@@ -17,9 +17,11 @@ body {
     background-color: #495950;
     width: 160px;
     height: 100%;
+    top: 0;
     position: fixed;
     padding-top: 2rem;
     left: 0;
+    z-index: 1000;
 }
 
 .sidebar ul {
@@ -44,7 +46,10 @@ body {
     padding-left: 12px;
     transition: background-color 0.3s ease;
 }
-
+.sidebar ul li a:hover {
+    background-color: #b7cfa2;
+  color:black;
+}
 /* Section Styling */
 .section {
     background-color: #ffffff;
@@ -105,4 +110,36 @@ body {
 .section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Back to Main Page Button */
+.back-to-main {
+    display: flex;
+    justify-content: right;
+    margin-top: 6px;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    z-index:9999;
+  
+}
+
+.back-button {
+    background-color: #495950; /* Background color */
+    color: #fff; /* Text color */
+    position:fixed;
+    padding: 8px 18px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  opacity:0.8;
+  z-index:99999;
+}
+
+.back-button:hover {
+    background-color: #072213;
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.back-button:active {
+    transform: translateY(8px); /* Subtle click effect */
 }
