@@ -1,3 +1,5 @@
+** Estructura de la página**
+
 ├── index.html              # Página principal del sitio  
 ├── style2.css              # Archivo CSS para la página principal  
 ├── script2.js              # Archivo JS para la página principal  
