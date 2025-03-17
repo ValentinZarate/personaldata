@@ -86,11 +86,9 @@ body {
     border-radius: 12px; /* Añade espacio entre la imagen y el texto */
 }
 .imagegif-content img {
-    width: 280px; /* Ajustar el tamaño según necesidad */
-    height: 220px;
-    object-fit: cover;
-    object-fit: cover;
-    border-radius: 12px; /* Añade espacio entre la imagen y el texto */
+    width: 350px; /* Ajustar el tamaño según necesidad */
+    height: 190px;
+        border-radius: 12px; /* Añade espacio entre la imagen y el texto */
 }
 /* Wide images under text */
 .wide-image img {
