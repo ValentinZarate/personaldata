@@ -11,7 +11,14 @@ body {
     margin-left: 180px;
     padding: 20px;
 }
-
+.static-title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #1A1A1A;
+    text-align: center;
+    margin-top: 40px;
+  margin-left: -80px
+}
 /* Sidebar */
 .sidebar {
     background-color: #495950;
