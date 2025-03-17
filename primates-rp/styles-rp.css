@@ -86,7 +86,7 @@ body {
     border-radius: 12px; /* Añade espacio entre la imagen y el texto */
 }
 .imagegif-content img {
-    width: 230px; /* Ajustar el tamaño según necesidad */
+    width: 280px; /* Ajustar el tamaño según necesidad */
     height: 220px;
     object-fit: cover;
     object-fit: cover;
