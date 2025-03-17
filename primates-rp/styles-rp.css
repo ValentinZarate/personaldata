@@ -103,6 +103,7 @@ body {
 /* Positioning for reverse layout */
 .content-wrapper {
     display: flex;
+    background-color:#e4e8d8;
     align-items: center;
     gap: 20px;
   flex-wrap: nowrap;
@@ -139,6 +140,7 @@ body {
 }
 .content-wrapper2 {
     display: flex;
+    background-color:#e4e8d8;
     align-items: center;
     gap: 20px;
   flex-wrap: nowrap;
