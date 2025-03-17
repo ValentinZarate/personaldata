@@ -13,12 +13,12 @@ body {
 }
 
 .static-title {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     font-weight: bold;
     color: #1A1A1A;
     text-align: center;
     margin-top: 40px;
-  margin-left: -80px
+  margin-left: -160px
 }
 /* Sidebar */
 .sidebar {
