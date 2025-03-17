@@ -105,9 +105,24 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+  flex-wrap: nowrap;
+}
+.text-content {
+    flex: 1; 
 }
 
-.content-wrapper.reverse {
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-section .text-area {
+        text-align: center;
+    }
+}
+.content-wrapper:nth-of-type(even) {
     flex-direction: row-reverse;
 }
 
