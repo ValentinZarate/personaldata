@@ -137,7 +137,12 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
+.content-wrapper2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  flex-wrap: nowrap;
+}
 /* Back to Main Page Button */
 .back-to-main {
     display: flex;
