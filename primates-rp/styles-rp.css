@@ -40,7 +40,7 @@ body {
 .sidebar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 8px;
     display: block;
     transition: background 0.3s;
@@ -53,6 +53,9 @@ body {
     border-left: 4px solid #334f1b;
     padding-left: 12px;
     transition: background-color 0.3s ease;
+}
+.sidebar ul li {
+    margin-bottom: 20px;
 }
 .sidebar ul li a:hover {
     background-color: #b7cfa2;
