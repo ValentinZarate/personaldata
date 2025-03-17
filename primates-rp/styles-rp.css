@@ -1,1 +1,70 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 180px;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #495950;
+    width: 160px;
+    height: 100%;
+    position: fixed;
+    padding-top: 2rem;
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #b7cfa2;
+    color: black;
+}
+
+/* Section Styling */
+.section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Image Content */
+.image-content img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+.wide-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Hover */
+.section:hover {
+    transform: translateY(-5px);
+}
 
