@@ -1,23 +1,24 @@
-*Estructura de la página*
+_**Estructura de la página**_
 
 ├── index.html              
 ├── style2.css              
 ├── script2.js              
 
-├── *Research Projects*         
+├── **Research Projects**         
 │   ├── primates-rp/               
 │   │   ├── primates.html          
 │   │   ├── primates-style.css     
-│   │   └── primates-script.js      
+│   │   ├── primates-script.js   
+|       └── images and GIFs
 │   ├── other-rp/               
 │       └── empty  
 
-├── *codes*                  
+├── **codes**                  
 │   ├── search_cycle.md  
 │   ├── sim_akde.md  
 │   └── all_bib_to_df.md  
 
-├── *cv*                       
+├── **CV**                       
 │   ├── cv_english.html          
 │   └── cv_spanish.html   
 
