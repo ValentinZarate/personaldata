@@ -64,6 +64,25 @@ p {
     text-align: left;
     margin-top: 40px;
 }
+
+/*About me section*/
+.image-content img {
+    width: 160px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.text-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.text-content p {
+    font-size: 17px;
+    font-weight: 480;
+    line-height: 1.6;
+}
 .content-wrapper {
     display: flex;
     align-items: center; /* Centra verticalmente */
