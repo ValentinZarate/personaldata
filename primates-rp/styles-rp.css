@@ -85,10 +85,16 @@ body {
       object-fit: cover;
     border-radius: 12px; /* Añade espacio entre la imagen y el texto */
 }
+.imagegif-content {
+    width: 100%;
+    text-align: center; /* Centra contenido inline o inline-block */
+}
+
 .imagegif-content img {
-    width: 350px; /* Ajustar el tamaño según necesidad */
-    height: 190px;
-        border-radius: 12px; /* Añade espacio entre la imagen y el texto */
+    width: 350px;
+    height: 340px;
+    border-radius: 12px;
+    display: inline-block; /* Importante para trabajar con text-align */
 }
 /* Wide images under text */
 .wide-image img {
@@ -118,6 +124,7 @@ body {
 .text-content {
     flex: 1; 
     font-size:18px;
+    text-align: center;
 }
 
 /* Responsive Design */
