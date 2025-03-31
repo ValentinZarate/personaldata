@@ -13,17 +13,20 @@ body {
 }
 
 .static-title {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 800;
-    color: #2a2a2a;
+    color: #2f2f2f;
+    background-color: #dce6d4; /* Verde claro pero más saturado */
+    padding: 20px 40px;
     text-align: center;
-    background: linear-gradient(to right, #a0c88f, #f6e27f);
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    margin: 40px auto;
-    transition: transform 0.3s ease;
+    border-left: 8px solid #6d8f5e;
+    border-bottom: 5px solid #b4c9a9; /* Línea inferior que marca presencia */
+    border-radius: 12px 0 12px 0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    margin: 50px auto 30px auto;
+    width: fit-content;
+    max-width: 90%;
+    transition: all 0.3s ease-in-out;
 }
 
 .static-title:hover {
