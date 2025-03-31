@@ -57,7 +57,7 @@ p {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.text-content h2 {
+.static-title {
      font-size: 4.3rem;
     font-weight: bold;
     color: #1A1A1A;
