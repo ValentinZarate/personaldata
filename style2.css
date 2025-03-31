@@ -70,7 +70,19 @@ p {
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     display: inline-block;
 }
-
+.static-title h1{
+     font-size: 4.3rem;
+    font-weight: bold;
+    color: #1A1A1A;
+    margin-bottom: 25px;
+    text-align: left;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-left: 5px solid #2d5a2f;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    display: inline-block;
+}
 /*About me section*/
 .image-content img {
     height: 300px;
