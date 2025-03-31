@@ -23,7 +23,7 @@ body {
     border-bottom: 5px solid #b4c9a9; /* Línea inferior que marca presencia */
     border-radius: 12px 0 12px 0;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    margin: 50px 0 30px 190px;
+    margin: 50px 0 30px 200px;
     width: fit-content;
     max-width: 90%;
     transition: all 0.3s ease-in-out;
