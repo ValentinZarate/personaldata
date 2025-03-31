@@ -13,8 +13,8 @@ body {
 }
 
 .static-title {
-    font-size: 2.6rem;
-    font-weight: 800;
+    font-size: 2.3rem;
+    font-weight: 500;
     color: #2f2f2f;
     background-color: #dce6d4; /* Verde claro pero más saturado */
     padding: 20px 40px;
@@ -23,7 +23,7 @@ body {
     border-bottom: 5px solid #b4c9a9; /* Línea inferior que marca presencia */
     border-radius: 12px 0 12px 0;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    margin: 50px 0 30px 180px;
+    margin: 50px 0 30px 190px;
     width: fit-content;
     max-width: 90%;
     transition: all 0.3s ease-in-out;
