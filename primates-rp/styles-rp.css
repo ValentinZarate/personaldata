@@ -91,7 +91,7 @@ body {
 }
 
 .imagegif-content img {
-    width: 350px;
+    width: 450px;
     height: 340px;
     border-radius: 12px;
     display: inline-block; /* Importante para trabajar con text-align */
