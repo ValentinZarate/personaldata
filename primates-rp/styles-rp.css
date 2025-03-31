@@ -111,8 +111,6 @@ body {
      max-width: 600px;
     max-height: 600px;
     justify-content: center; 
-    display: block;  
-    margin: 0 auto; 
 }
 
 /* Positioning for reverse layout */
