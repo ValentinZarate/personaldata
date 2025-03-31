@@ -73,7 +73,7 @@ p {
 
 /*About me section*/
 .image-content img {
-    height: 250px;
+    height: 300px;
     width: auto;
     flex-shrink: 0;
     object-fit: cover;
