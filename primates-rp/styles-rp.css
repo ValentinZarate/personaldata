@@ -126,12 +126,12 @@ body {
 }
 .text-content {
     flex: 1; 
-    font-size:19px;
+    font-size:18px;
     line-height: 1.7;
 }
 .text-content2 {
     flex: 1; 
-    font-size:19px;
+    font-size:18px;
     text-align: center;
     line-height: 1.7;
 }
