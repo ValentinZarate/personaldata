@@ -73,7 +73,7 @@ p {
 
 /*About me section*/
 .image-content img {
-    height: 200px;
+    height: 250px;
     width: auto;
     flex-shrink: 0;
     object-fit: cover;
@@ -84,12 +84,13 @@ p {
     font-size: 1.5rem;
     margin-bottom: 8px;
     color: #000000;
+    
 }
 
 .text-content p {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 480;
-    line-height: 1.6;
+    line-height: 1.9;
 }
 .content-wrapper {
     display: flex;
@@ -142,9 +143,9 @@ p {
 }
 
 .project-text p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 480;
-    line-height: 1.6;
+    line-height: 1.9;
 }
 
 
