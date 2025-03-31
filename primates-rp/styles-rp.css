@@ -99,8 +99,9 @@ body {
 /* Wide images under text */
 .wide-image img {
     width: 100%; 
+    justify-content: center; 
     max-width: 900px; /* Adjust width */
-    max-height:200px;
+    max-height:300px;
     border-radius: 8px;
     margin-top: 10px;
 }
@@ -122,6 +123,10 @@ body {
   flex-wrap: nowrap;
 }
 .text-content {
+    flex: 1; 
+    font-size:18px;
+}
+.text-content2 {
     flex: 1; 
     font-size:18px;
     text-align: center;
