@@ -13,12 +13,21 @@ body {
 }
 
 .static-title {
-    font-size: 2.3rem;
-    font-weight: bold;
-    color: #1A1A1A;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #2a2a2a;
     text-align: center;
-    margin-top: 40px;
-  margin-left: -160px
+    background: linear-gradient(to right, #a0c88f, #f6e27f);
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 40px auto;
+    transition: transform 0.3s ease;
+}
+
+.static-title:hover {
+    transform: scale(1.03);
 }
 /* Sidebar */
 .sidebar {
