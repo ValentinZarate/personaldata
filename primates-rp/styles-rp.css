@@ -126,12 +126,14 @@ body {
 }
 .text-content {
     flex: 1; 
-    font-size:18px;
+    font-size:22px;
+    line-height: 1.8;
 }
 .text-content2 {
     flex: 1; 
-    font-size:18px;
+    font-size:22px;
     text-align: center;
+    line-height: 1.8;
 }
 
 /* Responsive Design */
