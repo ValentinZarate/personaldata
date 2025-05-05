@@ -191,7 +191,7 @@ p {
     border-radius: 10px;
     margin-bottom: 50px;
     transform: translateY(3px);
-    transition: opacity 3s ease, transform 3s ease;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .section:hover {
