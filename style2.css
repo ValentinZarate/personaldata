@@ -394,4 +394,26 @@ p {
         width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
     }
 }
+/* Funding Section */
+.funding-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
+.funding-logos img {
+    max-height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+}
+
+.funding-logos img:hover {
+    transform: scale(1.05);
+}
