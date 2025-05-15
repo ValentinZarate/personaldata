@@ -214,4 +214,25 @@ body {
 .back-button:active {
     transform: translateY(8px); /* Subtle click effect */
 }
+.status {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
 
+.near-threatened {
+    color: black;
+    border: 2px solid gold;
+    background-color: #fff9dc;
+}
+
+.vulnerable {
+    color: black;
+    border: 2px solid red;
+    background-color: #ffe6e6;
+    text-decoration: none;
+}
+
+.vulnerable:hover {
+    background-color: #ffcccc;
+}
