@@ -7,20 +7,20 @@ body {
     padding: 0;
 }
 p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 480;
     line-height: 1.6;
     color: #000000;
 }
 .main-content {
-    margin-left: 180px;
-    padding: 20px;
+    margin-left: 11.25rem; /* 180px */
+    padding: 1.25rem;
 }
 
 /* Sidebar Navigation */
 .sidebar {
     background-color: #495950;
-    width: 160px;
+    width: 10rem;
     height: 100%;
     position: fixed;
     padding-top: 3.3rem;
@@ -33,149 +33,146 @@ p {
 }
 
 .sidebar ul li {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .sidebar ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    display: inline-block; /* Solo ocupa el espacio de las letras */
-    padding: 9px 13px;
-    border-radius: 6px;
+    display: inline-block;
+    padding: 0.5625rem 0.8125rem;
+    border-radius: 0.375rem;
     transition: background 0.3s;
 }
 
 .sidebar ul li a:hover {
     background-color: #b7cfa2;
-  color:black;
+    color: black;
 }
 
 /* Sticky Header */
 .sidebar.scrolled {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .static-title {
-     font-size: 2.7rem !important;
+    font-size: 2.7rem !important;
     font-weight: bold;
     color: #1A1A1A;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     text-align: left;
     background-color: #f1f1f1;
-    padding: 10px 20px;
-    border-left: 5px solid #2d5a2f;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding: 0.625rem 1.25rem;
+    border-left: 0.3125rem solid #2d5a2f;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.08);
     display: inline-block;
 }
 
-
-/*About me section*/
+/* About Me section */
 .image-content img {
-    height: 300px;
+    height: 18.75rem;
     width: auto;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
 }
+
 .text-content h1 {
     font-size: 1.5rem;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     color: #000000;
-    
 }
 
 .text-content p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 480;
     line-height: 1.6;
 }
+
 .content-wrapper {
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    gap: 20px; /* Espacio entre la imagen y el texto */
+    align-items: center;
+    gap: 1.25rem;
 }
-
 
 /* Research Projects Section */
 #research {
     display: flex;
-    flex-direction: column; /* Apila las subsecciones verticalmente */
-    gap: 30px; /* Espacio entre subsecciones */
+    flex-direction: column;
+    gap: 1.875rem;
 }
 
 .project-wrapper {
     display: flex;
-    align-items: center; /* Centra verticalmente la imagen y el texto */
-    gap: 20px; /* Espacio entre imagen y texto */
-    background-color: #e4e8d8; 
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+    align-items: center;
+    gap: 1.25rem;
+    background-color: #e4e8d8;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0.125rem 0.25rem 0.75rem rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
 }
 
 .project-wrapper:hover {
-    transform: translateY(-5px); /* Efecto hover suave */
+    transform: translateY(-0.3125rem);
 }
 
-/* Project Image Styling */
 .project-image img {
-    width: 180px;
-    height: 220px;
+    width: 11.25rem;
+    height: 13.75rem;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 0.75rem;
 }
+
 .project-image2 img {
-    width: 280px;
-    height: 200px;
+    width: 17.5rem;
+    height: 12.5rem;
     object-fit: cover;
-    object-position:right center;
-    border-radius: 12px;
+    object-position: right center;
+    border-radius: 0.75rem;
 }
-/* Project Text Styling */
+
 .project-text h2 {
     font-size: 1.5rem;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     color: #000000;
 }
 
 .project-text p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 480;
     line-height: 1.6;
 }
 
-
-/*Publicaction section*/
-
+/* Publication section */
 .pub-card {
     background-color: #e4e8d8;
-    padding: 10px;
-    border-radius: 12px;
-    margin-bottom: 25px; 
-    box-shadow: 2px 4px 12px rgba(0, 0.2, 0, 0.2);
+    padding: 0.625rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5625rem;
+    box-shadow: 0.125rem 0.25rem 0.75rem rgba(0, 0.2, 0, 0.2);
     transition: transform 0.6s ease;
 }
-.pub-card:hover {
-    transform: translateY(-5px); /* Efecto hover suave */
-}
 
+.pub-card:hover {
+    transform: translateY(-0.3125rem);
+}
 
 /* Data Links */
 .data-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .data-link {
     font-family: 'Courier New', monospace;
     background-color: #2C2C2C;
     color: #02eead;
-    padding: 8px 12px;
-    border-radius: 2px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.125rem;
     transition: background-color 0.8s ease;
 }
 
@@ -187,33 +184,34 @@ p {
 /* Hover Effects */
 .section {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    transform: translateY(3px);
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    margin-bottom: 3.125rem;
+    transform: translateY(0.1875rem);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .section:hover {
-    transform: translateY(-3px);
+    transform: translateY(-0.1875rem);
 }
-/* Card Styling - Expansión y movimiento */
+
+/* Card Styling */
 .card {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 2px 4px 12px rgba(0,0,0,0.2);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 0.125rem 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: visible;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 4px 8px 24px rgba(0,0,0,0.5);
+    transform: translateY(-0.5rem);
+    box-shadow: 0.25rem 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
 }
 
-/* Tooltip Trigger */
+/* Tooltip */
 .tooltip-trigger {
     color: #6a5acd;
     text-decoration: underline;
@@ -222,84 +220,73 @@ p {
     transition: color 0.3s ease;
 }
 
-/* Tooltip Styling */
 .tooltip {
-    position: absolute; /* Change from fixed to absolute */
+    position: absolute;
     background-color: #ffffff;
-    padding: 16px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
     display: none;
-    width: 320px;
-    z-index: 9999; /* Ensure it appears above other elements */
+    width: 20rem;
+    z-index: 9999;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.2s ease;
-    transform: translateY(10px);
+    transform: translateY(0.625rem);
 }
 
-/* Show Tooltip */
 .tooltip-visible {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Ensure parent container allows overflow */
-.card {
-    position: relative;
-    overflow: visible; /* Ensure tooltip is not cut off */
-}
-
-/* Special Tooltip Hover for Graph Trigger */
 .tooltip-trigger:hover + .tooltip,
 .tooltip:hover {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
-/* Tooltip Image Size */
+
 .tooltip img {
-    width: 100%; /* O usa un valor fijo como 80% o 300px */
-    max-width: 200px; /* Controla el tamaño máximo */
-    height: auto; /* Mantiene las proporciones de la imagen */
-    margin-top: 10px;
-    border-radius: 4px;
+    width: 100%;
+    max-width: 12.5rem;
+    height: auto;
+    margin-top: 0.625rem;
+    border-radius: 0.25rem;
 }
 
 .tooltip-right {
-    left: calc(100% + 10px); /* Añade espacio entre el tooltip y el contenedor */
+    left: calc(100% + 0.625rem);
     top: 50%;
     transform: translateY(-50%);
 }
 
-
-
-/* CV */
-/* Data Links */
+/* CV Links */
 .cv-link {
     font-family: 'Arial';
     background-color: #2C2C2C;
     color: #02eead;
-    padding: 8px 12px;
-    border-radius: 2px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.125rem;
     transition: background-color 0.8s ease;
 }
 
 .cv-container {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .cv-link:hover {
     background-color: #2C2C2C;
- color: #BB86FC;
+    color: #BB86FC;
 }
 
+/* Scroll Progress */
 #scroll-progress {
     position: fixed;
     top: 0;
     left: 0;
-    height: 6px;
+    height: 0.375rem;
     background-color: #678052;
     width: 0;
     z-index: 9999;
@@ -313,7 +300,6 @@ p {
     color: #214107;
     white-space: nowrap;
     overflow: hidden;
-    /*border-right: 3px solid #6a5acd;*/ /*lo saco por que rompe las pelotas*/
     animation: blink 0.7s step-end infinite;
 }
 
@@ -326,24 +312,23 @@ p {
     }
 }
 
-
-/* Contact Section */
+/* Contact Form */
 #contact-form {
     display: flex;
-    flex-wrap: wrap; /* Para que sea responsivo */
-    gap: 10px; /* Espacio entre los elementos */
+    flex-wrap: wrap;
+    gap: 0.625rem;
     align-items: center;
     justify-content: center;
 }
 
 #contact-form input,
 #contact-form textarea {
-    flex: 1; /* Para que todos los campos tengan el mismo tamaño */
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    flex: 1;
+    padding: 0.75rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.5rem;
     font-size: 1rem;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s ease;
 }
 
@@ -353,20 +338,18 @@ p {
     outline: none;
 }
 
-/* Tamaño específico para el textarea */
 #contact-form textarea {
-    flex: 2; /* Hace que el textarea sea un poco más ancho */
-    height: 48px;
-    resize: none; /* Evita que se redimensione */
+    flex: 2;
+    height: 3rem;
+    resize: none;
 }
-/* Button Styling */
 
 #contact-form button {
     background-color: #b7cfa2;
     color: black;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
     font-weight: bold;
@@ -374,16 +357,11 @@ p {
 
 #contact-form button:hover {
     background-color: #334f1b;
-    color : white;
-    font-weight: bold;
+    color: white;
 }
 
-/* Asegura que todo esté alineado */
-#contact-form input,
-#contact-form textarea,
-
-/* Responsive Fix */
-@media (max-width: 768px) {
+/* Contact Responsive */
+@media (max-width: 48rem) {
     #contact-form {
         flex-direction: column;
     }
@@ -391,30 +369,32 @@ p {
     #contact-form input,
     #contact-form textarea,
     #contact-form button {
-        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        width: 100%;
     }
 }
+
 /* Funding Section */
 .funding-logos {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .funding-logos img {
-    max-height: 80px;
+    max-height: 5rem;
     object-fit: contain;
     transition: transform 0.3s ease;
     background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.125rem 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
 .funding-logos img:hover {
     transform: scale(1.05);
-    box-shadow: 4px 8px 24px rgba(0, 0, 0, 0.3); /* sombra más fuerte */
+    box-shadow: 0.25rem 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
 }
+
