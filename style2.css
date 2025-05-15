@@ -416,4 +416,5 @@ p {
 
 .funding-logos img:hover {
     transform: scale(1.05);
+    box-shadow: 4px 8px 24px rgba(0, 0, 0, 0.3); /* sombra más fuerte */
 }
