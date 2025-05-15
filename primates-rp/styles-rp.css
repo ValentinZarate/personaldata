@@ -218,21 +218,28 @@ body {
     font-weight: bold;
     padding: 3px 8px;
     border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
+/* Near Threatened: black text, yellow border */
 .near-threatened {
     color: black;
     border: 2px solid gold;
-    background-color: #fff9dc;
+    background-color: #fff9c4;
 }
 
+.near-threatened:hover {
+    background-color: #fff176;
+}
+
+/* Vulnerable: black text, red border */
 .vulnerable {
     color: black;
     border: 2px solid red;
-    background-color: #ffe6e6;
-    text-decoration: none;
+    background-color: #ffcdd2;
 }
 
 .vulnerable:hover {
-    background-color: #ffcccc;
+    background-color: #ef9a9a;
 }
