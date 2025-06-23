@@ -10,9 +10,11 @@ _**Estructura de la página**_
 │   │   ├── primates-style.css     
 │   │   ├── primates-script.js   
 |       └── images and GIFs
-│   ├── other-rp/               
-│       └── empty  
-
+│   ├── other-rp/TO_COMPLETE               
+│   |   └── other.html 
+|   |   ├── other-style.css
+|   |   ├── other-script.js
+|       └── images and GIFs
 ├── **codes**                  
 │   ├── search_cycle.md  
 │   ├── sim_akde.md  
