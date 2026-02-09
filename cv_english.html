@@ -164,6 +164,24 @@ a:hover {
         p {
             margin-bottom: 17px;
         }
+        .profile-links {
+    position: absolute;
+    top: 130px;        
+    right: 32px;
+    display: flex;
+    gap: 12px;         
+}
+
+.profile-logo {
+    height: 28px;     
+    width: auto;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.profile-logo:hover {
+    opacity: 1;
+}
     </style>
 </head>
 <body>
@@ -173,6 +191,14 @@ a:hover {
     <div class="index-switch">
         <a href="index.html">Back to main page</a>
     </div>
+    <div class="profile-links">
+    <a href="https://www.researchgate.net/profile/Valentin-Zarate/research" target="_blank">
+        <img src="images/rg.png" alt="ResearchGate" class="profile-logo">
+    </a>
+    <a href="https://ceiba.org.ar/proyectos/" target="_blank">
+        <img src="images/ceiba.png" alt="CeIBA" class="profile-logo">
+    </a>
+</div>
     <div class="container">
         <h1>Valentín Zárate</h1>
         <p><strong>Address:</strong> Puerto Rico s/n, Puerto Iguazú, Misiones, Argentina</p>
