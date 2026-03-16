@@ -10,6 +10,7 @@ _**Estructura de la página**_
 │   │   ├── primates-style.css     
 │   │   ├── primates-script.js   
 |       └── images and GIFs
+
 │   ├── other-rp/TO_COMPLETE               
 │   |   └── other.html 
 |   |   ├── other-style.css
