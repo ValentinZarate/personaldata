@@ -15,6 +15,7 @@ _**Estructura de la página**_
 |   |   ├── other-style.css
 |   |   ├── other-script.js
 |       └── images and GIFs
+
 ├── **codes**                  
 │   ├── search_cycle.md  
 │   ├── sim_akde.md  
