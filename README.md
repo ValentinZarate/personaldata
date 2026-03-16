@@ -11,11 +11,11 @@ _**Estructura de la página**_
 │   │   ├── primates-script.js   
 |       └── images and GIFs
 
-│   ├── other-rp/TO_COMPLETE               
-│   |   └── other.html 
-|   |   ├── other-style.css
-|   |   ├── other-script.js
-|       └── images and GIFs
+├── other-rp/TO_COMPLETE               
+│   ├── other.html 
+|   ├── other-style.css
+|   ├── other-script.js
+|   └── images and GIFs
 
 ├── **codes**                  
 │   ├── search_cycle.md  
