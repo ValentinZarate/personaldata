@@ -174,9 +174,9 @@ body {
 .text-content,
 .text-content2 {
     flex: 1;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: var(--text-soft);
+    font-size: 1.15rem;   /* más grande */
+    line-height: 1.85;    /* un poco más aire */
+    color: #2b2f2c;       /* más oscuro */
 }
 
 .text-content p,
