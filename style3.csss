@@ -1,0 +1,308 @@
+/* =====================================
+   VARIANTE 2
+   Estética: ecología de campo + paper científico
+   Más clara, formal, menos neón
+   ===================================== */
+
+:root {
+    --bg-main: #f3efe4;
+    --bg-panel: #e7dfcf;
+    --bg-card: rgba(255, 252, 244, 0.94);
+    --bg-card-soft: rgba(238, 231, 216, 0.92);
+
+    --green-main: #315f4b;
+    --green-soft: #6f8f72;
+    --green-dark: #20382f;
+    --green-muted: #7c8c78;
+
+    --code-cyan: #2f6f73;
+    --code-purple: #6f5d8f;
+    --code-yellow: #b88935;
+
+    --text-main: #18231d;
+    --text-soft: #3f4d44;
+    --text-muted: #6f776f;
+
+    --border-soft: rgba(49, 95, 75, 0.18);
+    --shadow-soft: 0 18px 45px rgba(55, 47, 35, 0.16);
+}
+
+/* ---------- Fondo general ---------- */
+
+body {
+    background:
+        radial-gradient(circle at top left, rgba(111, 143, 114, 0.22), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(184, 137, 53, 0.16), transparent 30%),
+        linear-gradient(135deg, #f3efe4 0%, #eee7d8 45%, #f8f4ea 100%);
+    color: var(--text-main);
+}
+
+/* Grilla tipo mapa/topografía */
+body::before {
+    background-image:
+        linear-gradient(rgba(49, 95, 75, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(49, 95, 75, 0.055) 1px, transparent 1px);
+    background-size: 46px 46px;
+}
+
+/* Puntos de movimiento más sutiles */
+body::after {
+    background:
+        radial-gradient(circle at 20% 25%, rgba(49, 95, 75, 0.16) 0 2px, transparent 3px),
+        radial-gradient(circle at 42% 38%, rgba(47, 111, 115, 0.14) 0 2px, transparent 3px),
+        radial-gradient(circle at 68% 30%, rgba(184, 137, 53, 0.13) 0 2px, transparent 3px),
+        radial-gradient(circle at 80% 70%, rgba(111, 93, 143, 0.12) 0 2px, transparent 3px);
+}
+
+p {
+    color: var(--text-soft);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-main);
+}
+
+h2 {
+    color: var(--green-main);
+}
+
+/* ---------- Barra de progreso ---------- */
+
+#scroll-progress {
+    background: linear-gradient(90deg, #315f4b, #2f6f73, #b88935);
+    box-shadow: 0 0 16px rgba(49, 95, 75, 0.28);
+}
+
+/* ---------- Sidebar ---------- */
+
+.sidebar {
+    background:
+        linear-gradient(180deg, rgba(32, 56, 47, 0.98), rgba(49, 95, 75, 0.96)),
+        radial-gradient(circle at top, rgba(243, 239, 228, 0.12), transparent 45%);
+    border-right: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 12px 0 35px rgba(60, 48, 34, 0.22);
+}
+
+.sidebar::before {
+    color: #f3efe4;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.22);
+}
+
+.sidebar ul li a {
+    color: rgba(255, 252, 244, 0.86);
+}
+
+.sidebar ul li a::before {
+    color: #d5b46a;
+}
+
+.sidebar ul li a:hover {
+    color: #20382f;
+    background: linear-gradient(135deg, #f3efe4, #d5b46a);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* ---------- Secciones ---------- */
+
+.section {
+    background:
+        linear-gradient(145deg, rgba(255, 252, 244, 0.96), rgba(238, 231, 216, 0.92));
+    border: 1px solid rgba(49, 95, 75, 0.18);
+    box-shadow: var(--shadow-soft);
+}
+
+.section::before {
+    background:
+        linear-gradient(90deg, rgba(49, 95, 75, 0.08), transparent 40%),
+        radial-gradient(circle at top right, rgba(184, 137, 53, 0.10), transparent 36%);
+}
+
+.section:hover {
+    border-color: rgba(49, 95, 75, 0.34);
+    box-shadow: 0 24px 60px rgba(55, 47, 35, 0.22);
+}
+
+.section h1:not(.static-title) {
+    border-bottom: 2px solid rgba(49, 95, 75, 0.45);
+}
+
+.section h1:not(.static-title)::before {
+    color: #b88935;
+}
+
+/* ---------- About ---------- */
+
+.static-title {
+    color: #315f4b;
+    background: rgba(49, 95, 75, 0.08);
+    border-color: rgba(49, 95, 75, 0.22);
+}
+
+.static-title::before {
+    color: #b88935;
+}
+
+.image-content::before {
+    border-color: rgba(49, 95, 75, 0.28);
+}
+
+.image-content::after {
+    color: #fffaf0;
+    background: linear-gradient(135deg, #315f4b, #6f8f72);
+}
+
+.image-content img {
+    filter: saturate(0.88) contrast(1.02) sepia(0.08);
+    box-shadow: 0 22px 50px rgba(55, 47, 35, 0.28);
+}
+
+/* ---------- Proyectos ---------- */
+
+.project-wrapper {
+    background:
+        linear-gradient(145deg, rgba(255, 252, 244, 0.96), rgba(230, 222, 203, 0.92));
+    border: 1px solid rgba(49, 95, 75, 0.16);
+    box-shadow: 0 14px 34px rgba(55, 47, 35, 0.14);
+}
+
+.project-wrapper:hover {
+    border-color: rgba(49, 95, 75, 0.35);
+}
+
+.project-text h2 {
+    color: #315f4b;
+}
+
+.project-text h2::before {
+    color: #b88935;
+}
+
+.project-image img,
+.project-image2 img,
+.project-photo img {
+    border: 1px solid rgba(49, 95, 75, 0.22);
+    filter: saturate(0.9) contrast(1.03) sepia(0.06);
+}
+
+/* ---------- Publicaciones ---------- */
+
+.pub-card {
+    background:
+        linear-gradient(145deg, rgba(255, 252, 244, 0.98), rgba(236, 229, 213, 0.94));
+    border: 1px solid rgba(49, 95, 75, 0.16);
+    box-shadow: 0 14px 34px rgba(55, 47, 35, 0.14);
+}
+
+.pub-card::before {
+    background: rgba(184, 137, 53, 0.14);
+    color: #8a641e;
+    border-color: rgba(184, 137, 53, 0.3);
+}
+
+.pub-card:hover {
+    border-color: rgba(184, 137, 53, 0.42);
+    box-shadow: 0 22px 46px rgba(55, 47, 35, 0.20);
+}
+
+.pub-card p {
+    color: var(--text-muted);
+}
+
+.tooltip-trigger {
+    color: #2f6f73;
+    border-bottom: 1px dashed rgba(47, 111, 115, 0.7);
+}
+
+.tooltip-trigger:hover {
+    color: #315f4b;
+}
+
+/* ---------- Tooltips ---------- */
+
+.tooltip {
+    background: rgba(255, 252, 244, 0.98);
+    color: var(--text-soft);
+    border: 1px solid rgba(49, 95, 75, 0.22);
+    box-shadow: 0 18px 45px rgba(55, 47, 35, 0.25);
+}
+
+.tooltip strong {
+    color: #315f4b;
+}
+
+/* ---------- Links de código ---------- */
+
+.data-link {
+    color: #f6ead2;
+    background:
+        linear-gradient(145deg, #20382f, #315f4b);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 14px 34px rgba(55, 47, 35, 0.20);
+}
+
+.data-link::before {
+    color: #d5b46a;
+}
+
+.data-link::after {
+    color: #b8d4c0;
+}
+
+.data-link:hover {
+    color: #ffffff;
+    border-color: rgba(213, 180, 106, 0.55);
+}
+
+/* ---------- CV ---------- */
+
+.cv-link {
+    color: #fffaf0;
+    background: linear-gradient(135deg, #315f4b, #6f8f72);
+}
+
+.cv-link:hover {
+    box-shadow: 0 12px 30px rgba(49, 95, 75, 0.25);
+}
+
+/* ---------- Formulario ---------- */
+
+#contact-form input,
+#contact-form textarea {
+    background: rgba(255, 252, 244, 0.88);
+    color: var(--text-main);
+    border: 1px solid rgba(49, 95, 75, 0.22);
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: #7d847b;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: rgba(49, 95, 75, 0.58);
+    box-shadow: 0 0 0 4px rgba(49, 95, 75, 0.10);
+    background: #fffdf7;
+}
+
+#contact-form button {
+    color: #fffaf0;
+    background: linear-gradient(135deg, #315f4b, #6f8f72);
+}
+
+#contact-form button:hover {
+    box-shadow: 0 15px 35px rgba(49, 95, 75, 0.24);
+}
+
+/* ---------- Mobile sidebar ---------- */
+
+@media (max-width: 768px) {
+    .sidebar {
+        background:
+            linear-gradient(180deg, rgba(32, 56, 47, 0.98), rgba(49, 95, 75, 0.96));
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    }
+}
