@@ -273,15 +273,30 @@ Me interesa aplicar herramientas de ecología cuantitativa y análisis espacial 
     </section>
 
     <!-- Contacto -->
+    <!-- Contact Section -->
     <section id="contact" class="section">
-        <h1>Contacto</h1>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Tu nombre" required />
-            <input type="email" id="email" placeholder="Tu correo electrónico" required />
-            <textarea id="message" placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <h1>Contacto</h1>
+    <form id="contact-form"
+          action="https://formspree.io/f/mnpjvgan"
+          method="POST">
+
+        <input type="text" id="name" name="name"
+               placeholder="Tu Nombre" required />
+
+        <input type="email" id="email" name="email"
+               placeholder="Tu Correo" required />
+
+        <textarea id="message" name="message"
+                  placeholder="Tu Mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+</div>
+
+<script src="./script2.js"></script>
+</body>
+</html>
 
 </div>
 
